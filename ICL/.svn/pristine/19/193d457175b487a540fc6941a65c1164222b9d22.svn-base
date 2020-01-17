@@ -1,0 +1,77 @@
+﻿{
+  "Descriptor": {
+    "UId": "b0b1dba0-311e-4834-83ab-2d9a0f873339",
+    "Name": "EmailTemplateMacros",
+    "ModifiedOnUtc": "\/Date(1573710730000)\/",
+    "InstallType": 0,
+    "Schema": {
+      "UId": "e92a62ec-f0bb-422f-9a33-6d79532edc21",
+      "Name": "EmailTemplateMacros"
+    },
+    "Columns": [
+      {
+        "ColumnUId": "675f0417-546f-4be1-b2f0-52c00d759191",
+        "IsForceUpdate": true,
+        "IsKey": false,
+        "ColumnName": "Code",
+        "DataTypeValueUId": "325a73b8-0f47-44a0-8412-7606f78003ac"
+      },
+      {
+        "ColumnUId": "9c0bdcfe-57bc-4af6-8b70-4d3d711cb95a",
+        "IsForceUpdate": true,
+        "IsKey": false,
+        "ColumnName": "IsInactive",
+        "DataTypeValueUId": "90b65bf8-0ffc-4141-8779-2420877af907"
+      },
+      {
+        "ColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
+        "IsForceUpdate": true,
+        "IsKey": false,
+        "ColumnName": "Name",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+      },
+      {
+        "ColumnUId": "b1d7018a-8f0d-4913-91b0-93331066fbac",
+        "IsForceUpdate": true,
+        "IsKey": false,
+        "ColumnName": "Position",
+        "DataTypeValueUId": "6b6b74e2-820d-490e-a017-2b73d4ccf2b0"
+      },
+      {
+        "ColumnUId": "af1e4ae4-76c6-47fc-b98c-592541d69d3d",
+        "IsForceUpdate": true,
+        "IsKey": false,
+        "ColumnName": "Parent",
+        "DataTypeValueUId": "b295071f-7ea9-4e62-8d1a-919bf3732ff2"
+      },
+      {
+        "ColumnUId": "331466e8-84a2-407b-aea7-b51166d84f37",
+        "IsForceUpdate": true,
+        "IsKey": false,
+        "ColumnName": "ColumnPath",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+      },
+      {
+        "ColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
+        "IsForceUpdate": true,
+        "IsKey": false,
+        "ColumnName": "Description",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+      },
+      {
+        "ColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+        "IsForceUpdate": false,
+        "IsKey": true,
+        "ColumnName": "Id",
+        "DataTypeValueUId": "23018567-a13c-4320-8687-fd6f9e3699bd"
+      },
+      {
+        "ColumnUId": "68e1ebb9-eaec-4373-a26c-a806d808b5a4",
+        "IsForceUpdate": true,
+        "IsKey": false,
+        "ColumnName": "AccountCommunicationType",
+        "DataTypeValueUId": "b295071f-7ea9-4e62-8d1a-919bf3732ff2"
+      }
+    ]
+  }
+}

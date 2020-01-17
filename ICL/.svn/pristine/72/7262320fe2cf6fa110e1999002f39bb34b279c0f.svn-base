@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "97776a15-95f2-4f5b-90ad-f3f26e43c6fc",
+    "Name": "ICLTestUserManagementCredentials",
+    "ModifiedOnUtc": "\/Date(1572007114000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "ICLTestUserManagementCredentials",
+    "DependsOn": []
+  }
+}

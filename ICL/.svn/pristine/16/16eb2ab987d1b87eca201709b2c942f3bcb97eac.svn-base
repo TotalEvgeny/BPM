@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="ro-RO">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Страница обращения" />
+			<Item Name="LocalizableStrings.EmailTitleCaption.Caption" Value="Reactie caz" />
+			<Item Name="LocalizableStrings.EscalationTitle.Caption" Value="EscalationTitle" />
+			<Item Name="LocalizableStrings.HideSystemMessagesString.Caption" Value="Ascunde mesaje sistem" />
+			<Item Name="LocalizableStrings.MessageHistoryGroupCaption.Caption" Value="Istoric" />
+			<Item Name="LocalizableStrings.ParametersTabCaption.Caption" Value="Profil caz" />
+			<Item Name="LocalizableStrings.ProcessingTabCaption.Caption" Value="In procesare" />
+			<Item Name="LocalizableStrings.SchemaLocalizableString1.Caption" Value="Message to user 1" />
+			<Item Name="LocalizableStrings.SearchForSimilarCasesButtonCaption.Caption" Value="Cautare cazuri similare" />
+			<Item Name="LocalizableStrings.ServiceItemTipMessage.Caption" Value="ServiceItemTipMessage" />
+			<Item Name="LocalizableStrings.ServicePactTipMessage.Caption" Value="ServicePactTipMessage" />
+			<Item Name="LocalizableStrings.ShowSystemMessagesString.Caption" Value="Arata mesaje sistem" />
+		</Items>
+	</Group>
+</Resources>

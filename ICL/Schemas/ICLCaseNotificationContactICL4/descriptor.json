@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "50d9cde1-60e1-4126-873b-48a8e88c9e4e",
+    "Name": "ICLCaseNotificationContactICL4",
+    "ModifiedOnUtc": "\/Date(1571039841000)\/",
+    "Parent": {
+      "UId": "64654e80-7c35-49ac-be53-55317118485b",
+      "Name": "ICLCaseNotificationContact"
+    },
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Отправка уведомлений Контакту по обращению",
+    "DependsOn": []
+  }
+}

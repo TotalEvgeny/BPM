@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "31ea8563-770a-4056-afe3-61dd4d56d389",
+    "Name": "ICLGroup",
+    "ModifiedOnUtc": "\/Date(1560750160000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Группа ЕИС КС",
+    "DependsOn": []
+  }
+}

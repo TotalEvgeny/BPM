@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="uk-UA">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Страница обращения" />
+			<Item Name="LocalizableStrings.EmailTitleCaption.Caption" Value="Відповідь на звернення" />
+			<Item Name="LocalizableStrings.EscalationTitle.Caption" Value="Ескалація" />
+			<Item Name="LocalizableStrings.HideSystemMessagesString.Caption" Value="Приховати системні повідомлення" />
+			<Item Name="LocalizableStrings.MessageHistoryGroupCaption.Caption" Value="Історія" />
+			<Item Name="LocalizableStrings.ParametersTabCaption.Caption" Value="Повідомлення користувачу 1" />
+			<Item Name="LocalizableStrings.ProcessingTabCaption.Caption" Value="Обробка" />
+			<Item Name="LocalizableStrings.SchemaLocalizableString1.Caption" Value="Повідомлення користувачу 1" />
+			<Item Name="LocalizableStrings.SearchForSimilarCasesButtonCaption.Caption" Value="Пошук аналогічних звернень" />
+			<Item Name="LocalizableStrings.ServiceItemTipMessage.Caption" Value="ServiceItemTipMessage" />
+			<Item Name="LocalizableStrings.ServicePactTipMessage.Caption" Value="ServicePactTipMessage" />
+			<Item Name="LocalizableStrings.ShowSystemMessagesString.Caption" Value="Показати системні повідомлення" />
+		</Items>
+	</Group>
+</Resources>

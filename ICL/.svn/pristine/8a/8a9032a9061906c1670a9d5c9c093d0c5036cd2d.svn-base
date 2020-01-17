@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "8a590f6e-c717-4025-87a8-370a0a7f9d4a",
+    "Name": "ICLCaseReturningNotifyProcess",
+    "ModifiedOnUtc": "\/Date(1570613231000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Уведомлений о возврате обращения в работу",
+    "DependsOn": []
+  }
+}

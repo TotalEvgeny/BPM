@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "d4908eeb-542e-46b3-b298-22da9d47c0f7",
+    "Name": "ICLStatusSendNotificationDict",
+    "ModifiedOnUtc": "\/Date(1573452986000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Base lookup",
+    "DependsOn": []
+  }
+}

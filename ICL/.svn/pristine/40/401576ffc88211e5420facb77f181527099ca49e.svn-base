@@ -1,0 +1,32 @@
+= MetaData.Schema.UId "28f5448a-63fd-40df-a8b8-d49044cc252b"
+= MetaData.Schema.A5 "91278a55-4e9c-422a-9676-68b333a7b340"
+= MetaData.Schema.B6 "22fc7faa-2155-4f76-8258-0108fc7d3d22"
+= MetaData.Schema.B7 true
+= MetaData.Schema.B8 "7.14.0.597"
+= MetaData.Schema.EG1.UId "0cd3b9dd-38f2-4eed-84d3-dab0c81a2527"
++ MetaData.Schema.EG1.B8 "7.14.0.597"
+= MetaData.Schema.EG1.BK37.A3 "42952187-78ed-4d75-9f9a-67cb4568e647"
+= MetaData.Schema.EG1.BK37.A4 "42952187-78ed-4d75-9f9a-67cb4568e647"
++ MetaData.Schema.EG1.BK3.["079c1a2b-96d1-4935-9764-180b73ed11ac"].BM4.["6a2146bb-1688-4388-9946-29409f61d0fb"].IL2 "079c1a2b-96d1-4935-9764-180b73ed11ac"
+- MetaData.Schema.EG1.BK3.["079c1a2b-96d1-4935-9764-180b73ed11ac"].BM4.["6a2146bb-1688-4388-9946-29409f61d0fb"].BL4
+- MetaData.Schema.EG1.BK3.["079c1a2b-96d1-4935-9764-180b73ed11ac"].BM4.["6a2146bb-1688-4388-9946-29409f61d0fb"].BL9
+- MetaData.Schema.EG1.BK3.["079c1a2b-96d1-4935-9764-180b73ed11ac"].BL9
++ MetaData.Schema.D15 true
+= MetaData.Schema.D8 "3b621e1f-8573-4eb6-898c-dbc2929c9dd0"
+- MetaData.Schema.D2.["ae0e45ca-c495-4fe7-a39d-3ab7278e1617"].E16
+- MetaData.Schema.D2.["e80190a5-03b2-4095-90f7-a193a960adee"].E16
+- MetaData.Schema.D2.["ebf6bb93-8aa6-4a01-900d-c6ea67affe21"].E16
+- MetaData.Schema.D2.["9928edec-4272-425a-93bb-48743fee4b04"].E16
+- MetaData.Schema.D2.["3015559e-cbc6-406a-88af-07f7930be832"].E16
+- MetaData.Schema.D2.["3fabd836-6a53-4d8d-9069-6df88d9dae1e"].E16
+- MetaData.Schema.D2.["9e46bb69-9788-423c-b7cd-4c624081082d"].E16
+- MetaData.Schema.D20
++ MetaData.Schema.B7 true
++ MetaData.Schema.D2.["ae0e45ca-c495-4fe7-a39d-3ab7278e1617"].E16 false
++ MetaData.Schema.D2.["e80190a5-03b2-4095-90f7-a193a960adee"].E16 false
++ MetaData.Schema.D2.["ebf6bb93-8aa6-4a01-900d-c6ea67affe21"].E16 false
++ MetaData.Schema.D2.["9928edec-4272-425a-93bb-48743fee4b04"].E16 false
++ MetaData.Schema.D2.["3015559e-cbc6-406a-88af-07f7930be832"].E16 false
++ MetaData.Schema.D2.["3fabd836-6a53-4d8d-9069-6df88d9dae1e"].E16 false
++ MetaData.Schema.D2.["9e46bb69-9788-423c-b7cd-4c624081082d"].E16 false
++ MetaData.Schema.D2.["d97e37e6-dac9-47db-859c-7d8671c4820b"].E16 false

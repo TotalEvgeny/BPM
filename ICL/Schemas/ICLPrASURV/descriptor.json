@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "f6b1820f-18ae-4fc4-8322-7aef8bff45db",
+    "Name": "ICLPrASURV",
+    "ModifiedOnUtc": "\/Date(1560750162000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Проект АСУРВ",
+    "DependsOn": []
+  }
+}

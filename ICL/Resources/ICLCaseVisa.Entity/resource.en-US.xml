@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Визы в разделе Case" />
+			<Item Name="Columns.ICLCase.Caption" Value="Case" />
+			<Item Name="EventsProcessSchema.BaseElements.BaseEntityDeletedScriptTask.Caption" Value="BaseEntityDeletedScriptTask" />
+			<Item Name="EventsProcessSchema.BaseElements.BaseEntityDeletedStartMessage.Caption" Value="BaseEntityDeletedStartMessage" />
+			<Item Name="EventsProcessSchema.BaseElements.BaseEntityDeletedSubProcess.Caption" Value="BaseEntityDeletedSubProcess" />
+			<Item Name="EventsProcessSchema.BaseElements.BaseEntitySavedIndexingTask.Caption" Value="BaseEntitySavedIndexingTask" />
+			<Item Name="EventsProcessSchema.Methods.IndexEntity.Caption" Value="Object Method 1" />
+		</Items>
+	</Group>
+</Resources>

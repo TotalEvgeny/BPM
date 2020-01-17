@@ -1,0 +1,35 @@
+﻿{
+  "Descriptor": {
+    "UId": "236b6501-4271-409f-9944-288c4a3f9fa2",
+    "Name": "PortalColumnAccessList_PortalColumnAccessListManager_2df4ef5b491c480b85424f61cf2d240e",
+    "ModifiedOnUtc": "\/Date(1572613866000)\/",
+    "InstallType": 0,
+    "Schema": {
+      "UId": "d9062f7d-b700-4b1a-972c-9864e8553bb1",
+      "Name": "PortalColumnAccessList"
+    },
+    "Columns": [
+      {
+        "ColumnUId": "087f5050-1d50-4639-905e-b75eea498ff8",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "ColumnUId",
+        "DataTypeValueUId": "23018567-a13c-4320-8687-fd6f9e3699bd"
+      },
+      {
+        "ColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+        "IsForceUpdate": false,
+        "IsKey": true,
+        "ColumnName": "Id",
+        "DataTypeValueUId": "23018567-a13c-4320-8687-fd6f9e3699bd"
+      },
+      {
+        "ColumnUId": "b03360a8-d50e-4cb0-a1d7-6d46d0b31bff",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "PortalSchemaList",
+        "DataTypeValueUId": "b295071f-7ea9-4e62-8d1a-919bf3732ff2"
+      }
+    ]
+  }
+}

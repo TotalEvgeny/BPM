@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Columns.ICLAlertMailTempType.Caption" Value="Тип шаблона email для оповещений" />
+			<Item Name="Columns.ICLContractCurator.Caption" Value="Куратор договора" />
+			<Item Name="Columns.ICLCustomer.Caption" Value="Заказчик АСУРВ" />
+			<Item Name="Columns.ICLEmailSendNotAcc.Caption" Value="Email для уведомлений" />
+			<Item Name="Columns.ICLFloat1.Caption" Value="Дробное число 1" />
+			<Item Name="Columns.ICLInteger1.Caption" Value="Целое число 1" />
+			<Item Name="Columns.ICLLasting.Caption" Value="Длительность" />
+			<Item Name="Columns.ICLNumberName.Caption" Value="Номер и наименование договора" />
+			<Item Name="Columns.ICLPrice.Caption" Value="Стоимость договора" />
+			<Item Name="Columns.ICLProject.Caption" Value="Проект АСУРВ" />
+		</Items>
+	</Group>
+</Resources>

@@ -1,0 +1,52 @@
+﻿{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "SourceCodeSchemaManager",
+      "UId": "5eed2041-272c-470e-a9c6-7453cbace7f2",
+      "A2": "ICLEstimateLinksGenerator",
+      "A5": "92e493b2-7fa6-411c-99b1-a95a26c2094e",
+      "B1": [],
+      "B2": [
+        {
+          "UId": "a254cf20-e164-400f-b6d9-ab0d7ca8833f",
+          "A2": "FirstLevelSatisfaction",
+          "A3": "5eed2041-272c-470e-a9c6-7453cbace7f2",
+          "A4": "5eed2041-272c-470e-a9c6-7453cbace7f2",
+          "A5": "92e493b2-7fa6-411c-99b1-a95a26c2094e"
+        },
+        {
+          "UId": "c79c0f7b-b6df-4171-a103-2fa51eeb711e",
+          "A2": "SecondLevelSatisfaction",
+          "A3": "5eed2041-272c-470e-a9c6-7453cbace7f2",
+          "A4": "5eed2041-272c-470e-a9c6-7453cbace7f2",
+          "A5": "92e493b2-7fa6-411c-99b1-a95a26c2094e"
+        },
+        {
+          "UId": "e197acbe-77e7-47ba-86fb-0267e76bb360",
+          "A2": "ThirdLevelSatisfaction",
+          "A3": "5eed2041-272c-470e-a9c6-7453cbace7f2",
+          "A4": "5eed2041-272c-470e-a9c6-7453cbace7f2",
+          "A5": "92e493b2-7fa6-411c-99b1-a95a26c2094e"
+        },
+        {
+          "UId": "a244311a-4dd4-4f8f-a187-457d3d09c419",
+          "A2": "FourthLevelSatisfaction",
+          "A3": "5eed2041-272c-470e-a9c6-7453cbace7f2",
+          "A4": "5eed2041-272c-470e-a9c6-7453cbace7f2",
+          "A5": "92e493b2-7fa6-411c-99b1-a95a26c2094e"
+        },
+        {
+          "UId": "41635ae1-a40e-4661-b5c3-a4603279f3ad",
+          "A2": "FifthLevelSatisfaction",
+          "A3": "5eed2041-272c-470e-a9c6-7453cbace7f2",
+          "A4": "5eed2041-272c-470e-a9c6-7453cbace7f2",
+          "A5": "92e493b2-7fa6-411c-99b1-a95a26c2094e"
+        }
+      ],
+      "B3": [],
+      "B6": "22fc7faa-2155-4f76-8258-0108fc7d3d22",
+      "B8": "7.14.0.597",
+      "HD1": "50e3acc0-26fc-4237-a095-849a1d534bd3"
+    }
+  }
+}

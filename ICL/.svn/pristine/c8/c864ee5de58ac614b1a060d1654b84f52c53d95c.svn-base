@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="cs-CZ">
+	<Group Type="String">
+		<Items>
+			<Item Name="EventsProcessSchema.Caption" Value="Byznys proces" />
+			<Item Name="EventsProcessSchema.LocalizableStrings.BodyMessage.Value" Value="Potřebuje se Vaše schválení. Chcete-li přidat schválení, klikněte na tento &lt;a href = {0}&gt;odkaz&lt;/a&gt;" />
+			<Item Name="EventsProcessSchema.LocalizableStrings.PopupBodyDateFormat.Caption" Value="PopupBodyDateFormat" />
+			<Item Name="EventsProcessSchema.LocalizableStrings.PopupBodyDateFormat.Value" Value="yyyy/MM/dd" />
+			<Item Name="EventsProcessSchema.LocalizableStrings.PopupBodyDefaultTemplate.Value" Value="{0}{1}" />
+			<Item Name="EventsProcessSchema.LocalizableStrings.PopupBodyTemplate.Caption" Value="PopupBodyTemplate" />
+			<Item Name="EventsProcessSchema.LocalizableStrings.PopupBodyTemplate.Value" Value="{0}: {1} ze dne {2}" />
+			<Item Name="EventsProcessSchema.LocalizableStrings.PopupTitleTemplate.Caption" Value="PopupTitleTemplate" />
+			<Item Name="EventsProcessSchema.LocalizableStrings.PopupTitleTemplate.Value" Value="Potřebuje se schválení" />
+			<Item Name="EventsProcessSchema.LocalizableStrings.SubjectString.Value" Value="Žádost o schválení" />
+		</Items>
+	</Group>
+</Resources>

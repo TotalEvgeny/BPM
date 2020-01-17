@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "727a20c1-b03f-498e-b15d-9a4ef1a2011f",
+    "Name": "ITSMCaseVisa",
+    "ModifiedOnUtc": "\/Date(1574057381000)\/",
+    "Parent": {
+      "UId": "f18c187a-303f-49f8-bc1c-51e318a9158a",
+      "Name": "ITSMCaseVisa"
+    },
+    "ExtendParent": true,
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Base approval",
+    "DependsOn": []
+  }
+}

@@ -1,0 +1,118 @@
+namespace Terrasoft.Configuration.ICLEntityEvents
+{
+	using System;
+	using System.Text;
+	using System.Collections.Generic;
+	using System.Data;
+	using System.Linq;
+	using Terrasoft.Common;
+	using Terrasoft.Core;
+	using Terrasoft.Core.DB;
+	using Terrasoft.Core.Entities;
+	using System.Text.RegularExpressions;
+	using Terrasoft.Core.Entities.Events;
+
+	[EntityEventListener(SchemaName = "Case")]
+	public class CaseEntityEventListener : BaseEntityEventListener
+	{
+		#region Вспомогательные методы
+	
+		/// <summary>
+		/// Отложенный запуск БП Уведомлений о возврате обращения в работу
+		/// </summary>
+		/// <param name="entity"></param>
+		// private void DelayedStartCaseReturning(Entity entity)
+		// {
+		// 	var logName = "[CaseSaving] - Обращение отложено";
+		// 	Logger.Log("START", logName);
+		// 	try
+		// 	{
+		// 		var changed = entity.GetChangedColumnValues()
+		// 		if (changed.Any(col => col.Name == "Status"))
+		// 		{
+		// 			var caseStatus = entity.GetTypedColumnValue<Guid>("Status");
+		// 			var oldCaseStatus = entity.GetTypedOldColumnValue<Guid>("Status");
+		// 			var setDate = entity.GetTypedColumnValue<Guid>("ICLSetDate");
+		// 			if(caseStatus == ServerConstants.CaseStatus.Postponed && setDate != DateTime.MinValue)
+		// 			{
+		// 				//Создаем job в планировщике
+		// 			}
+		// 			Entity.GetTypedOldColumnValue<Guid>("ICLCarId");
+		// 		}
+		// 	}
+		// 	catch (Exception ex)
+		// 	{
+		// 		Logger.Log("ОШИБКА", logName);
+		// 		Logger.Log(ex.ToString(), logName);
+		// 	}
+		// 	Logger.Log("END", logName);
+		// }
+		
+		// <summary>
+		// Автозаполнение Группы ответственных при создании обращений через email
+		// </summary>
+		// <param name="entity">
+		// private void SetGroup(Entity entity)
+		// {
+		// 	var origin = entity.GetTypedColumnValue<Guid>("OriginId");
+		// 	if(origin == ServerConstants.CaseOrigin.Email)
+		// 	{
+		// 		entity.SetColumnValue("GroupId", ServerConstants.SysAdminUnit.FirstLineEmp);
+		// 	}
+		// }
+
+		/// <summary>
+		/// Автозаполнение ФИО контакта и Email контакта
+		/// </summary>
+		/// <param name="entity">
+		private void SetContactNameAndEmail(Entity entity, UserConnection userConnection)
+		{
+			Guid contactId = entity.GetTypedColumnValue<Guid>("ContactId");
+			if(contactId != Guid.Empty)
+			{
+				Select select = (Select) new Select(userConnection)
+					.Column("C", "Name")
+					.Column("C", "Email")
+					.From("Contact").As("C")
+					.Where("C", "Id").IsEqual(Column.Parameter(contactId));
+				using (DBExecutor executor = userConnection.EnsureDBConnection())
+				{
+					using (IDataReader dataReader = select.ExecuteReader(executor))
+					{
+						if (dataReader.Read())
+						{
+							entity.SetColumnValue("ICLContactName", dataReader.GetColumnValue<string>("Name"));
+							entity.SetColumnValue("ICLContactEmail", dataReader.GetColumnValue<string>("Email"));
+						}
+					}
+				}
+			}
+		}
+
+
+		#endregion
+
+		#region Обработчики событий
+
+		public override void OnSaving(object sender, EntityBeforeEventArgs e)
+		{
+			base.OnSaving(sender, e);
+			var entity = (Entity)sender;
+			var userConnection = entity.UserConnection;
+		
+			// Канал направления ответа
+			//SetDirectionChannel(entity);
+		}
+		
+		public override void OnInserting(object sender, EntityBeforeEventArgs e)
+		{
+			base.OnInserting(sender, e);
+			var entity = (Entity)sender;
+			var userConnection = entity.UserConnection;
+		
+			SetContactNameAndEmail(entity, userConnection);
+		}
+		
+		#endregion
+	}
+}

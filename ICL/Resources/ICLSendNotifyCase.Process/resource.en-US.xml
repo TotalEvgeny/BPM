@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="BaseElements.ConditionalSequenceFlow1.Caption" Value="Контрагент не найден" />
+			<Item Name="BaseElements.ConditionalSequenceFlow2.Caption" Value="Нет" />
+			<Item Name="BaseElements.ConditionalSequenceFlow3.Caption" Value="Нет" />
+			<Item Name="BaseElements.ConditionalSequenceFlow4.Caption" Value="Нет записей приоритета" />
+			<Item Name="BaseElements.ConditionalSequenceFlow5.Caption" Value="Календарные единицы времени" />
+			<Item Name="BaseElements.ConditionalSequenceFlow6.Caption" Value="Общий шаблон не найден" />
+			<Item Name="BaseElements.ConditionalSequenceFlow7.Caption" Value="Рабочих дней" />
+			<Item Name="BaseElements.ConditionalSequenceFlow8.Caption" Value="Календарных часов" />
+			<Item Name="BaseElements.ConditionalSequenceFlow9.Caption" Value="Календарных минут" />
+			<Item Name="BaseElements.DefaultSequenceFlow1.Caption" Value="Да" />
+			<Item Name="BaseElements.DefaultSequenceFlow3.Caption" Value="Рабочие единицы времени" />
+			<Item Name="BaseElements.DefaultSequenceFlow4.Caption" Value="Нет" />
+			<Item Name="BaseElements.ExclusiveGateway1.Caption" Value="Контрагент найден в справочнике" />
+			<Item Name="BaseElements.ExclusiveGateway2.Caption" Value="Родитель пуст или равен самому себе?" />
+			<Item Name="BaseElements.FormulaTask1.Caption" Value="Id обращения" />
+			<Item Name="BaseElements.FormulaTask2.Caption" Value="Id контрагента" />
+			<Item Name="BaseElements.FormulaTask3.Caption" Value="Id контрагента из родителя" />
+			<Item Name="BaseElements.FormulaTask4.Caption" Value="Формула 4" />
+			<Item Name="BaseElements.LinkEntityToProcessUserTask1.Caption" Value="Привязать процесс к обращению" />
+			<Item Name="BaseElements.LinkEntityToProcessUserTask1.Parameters.EntityId.Caption" Value="Object" />
+			<Item Name="BaseElements.LinkEntityToProcessUserTask1.Parameters.EntityId.DisplayValue" Value="[#Id обращения#]" />
+			<Item Name="BaseElements.LinkEntityToProcessUserTask1.Parameters.EntitySchemaId.Caption" Value="Object schema" />
+			<Item Name="BaseElements.LinkEntityToProcessUserTask1.Parameters.EntitySchemaId.DisplayValue" Value="Обращение" />
+			<Item Name="BaseElements.ReadDataUserTask1.Caption" Value="ЧД Обращение" />
+			<Item Name="BaseElements.ReadDataUserTask1.Parameters.AggregationColumnName.Caption" Value="Name of aggregate function column" />
+			<Item Name="BaseElements.ReadDataUserTask1.Parameters.CanReadUncommitedData.Caption" Value="Read uncommitted data" />
+			<Item Name="BaseElements.ReadDataUserTask1.Parameters.CanReadUncommitedData.DisplayValue" Value="true" />
+			<Item Name="BaseElements.ReadDataUserTask1.Parameters.ConsiderTimeInFilter.Caption" Value="Consider time in the filter" />
+			<Item Name="BaseElements.ReadDataUserTask1.Parameters.ConsiderTimeInFilter.DisplayValue" Value="false" />
+			<Item Name="BaseElements.ReadDataUserTask1.Parameters.DataSourceFilters.Caption" Value="Data source of filters" />
+			<Item Name="BaseElements.ReadDataUserTask1.Parameters.DataSourceFilters.DisplayValue" Value="{&quot;className&quot;:&quot;Terrasoft.FilterGroup&quot;,&quot;serializedFilterEditData&quot;:&quot;{\&quot;className\&quot;:\&quot;Terrasoft.FilterGroup\&quot;,\&quot;items\&quot;:{\&quot;7ba8a3ef-d43b-421d-b14d-813a0d78651e\&quot;:{\&quot;className\&quot;:\&quot;Terrasoft.CompareFilter\&quot;,\&quot;filterType\&quot;:1,\&quot;comparisonType\&quot;:3,\&quot;isEnabled\&quot;:true,\&quot;trimDateTimeParameterToDate\&quot;:false,\&quot;leftExpression\&quot;:{\&quot;className\&quot;:\&quot;Terrasoft.ColumnExpression\&quot;,\&quot;expressionType\&quot;:0,\&quot;columnPath\&quot;:\&quot;Id\&quot;},\&quot;isAggregative\&quot;:false,\&quot;key\&quot;:\&quot;7ba8a3ef-d43b-421d-b14d-813a0d78651e\&quot;,\&quot;dataValueType\&quot;:0,\&quot;leftExpressionCaption\&quot;:\&quot;Id\&quot;,\&quot;rightExpression\&quot;:{\&quot;className\&quot;:\&quot;Terrasoft.ParameterExpression\&quot;,\&quot;expressionType\&quot;:2,\&quot;parameter\&quot;:{\&quot;className\&quot;:\&quot;Terrasoft.Parameter\&quot;,\&quot;dataValueType\&quot;:26,\&quot;value\&quot;:{\&quot;value\&quot;:\&quot;[IsOwnerSchema:false].[IsSchema:false].[Parameter:{83f64107-ee9f-482a-a50a-f80ff802da17}]\&quot;,\&quot;displayValue\&quot;:\&quot;Id обращения\&quot;}}}}},\&quot;logicalOperation\&quot;:0,\&quot;isEnabled\&quot;:true,\&quot;filterType\&quot;:6,\&quot;rootSchemaName\&quot;:\&quot;Case\&quot;,\&quot;key\&quot;:\&quot;\&quot;}&quot;,&quot;dataSourceFilters&quot;:&quot;{\&quot;items\&quot;:{\&quot;7ba8a3ef-d43b-421d-b14d-813a0d78651e\&quot;:{\&quot;filterType\&quot;:1,\&quot;comparisonType\&quot;:3,\&quot;isEnabled\&quot;:true,\&quot;trimDateTimeParameterToDate\&quot;:false,\&quot;leftExpression\&quot;:{\&quot;expressionType\&quot;:0,\&quot;columnPath\&quot;:\&quot;Id\&quot;},\&quot;rightExpression\&quot;:{\&quot;expressionType\&quot;:2,\&quot;parameter\&quot;:{\&quot;dataValueType\&quot;:26,\&quot;value\&quot;:{\&quot;value\&quot;:\&quot;[IsOwnerSchema:false].[IsSchema:false].[Parameter:{83f64107-ee9f-482a-a50a-f80ff802da17}]\&quot;}}}}},\&quot;logicalOperation\&quot;:0,\&quot;isEnabled\&quot;:true,\&quot;filterType\&quot;:6,\&quot;rootSchemaName\&quot;:\&quot;Case\&quot;}&quot;}" />
+			<Item Name="BaseElements.ReadDataUserTask1.Parameters.EntityColumnMetaPathes.Caption" Value="Columns to read" />
+			<Item Name="BaseElements.ReadDataUserTask1.Parameters.EntityColumnMetaPathes.DisplayValue" Value="70620d00-e4ea-48d1-9fdc-4572fcd8d41b;6ab42472-7828-4d51-a3e6-c38b485f3252;af280321-e749-41dd-98e5-383906747e29" />
+			<Item Name="BaseElements.ReadDataUserTask1.Parameters.FunctionType.Caption" Value="Aggregate function type" />
+			<Item Name="BaseElements.ReadDataUserTask1.Parameters.FunctionType.DisplayValue" Value="0" />
+			<Item Name="BaseElements.ReadDataUserTask1.Parameters.IgnoreDisplayValues.Caption" Value="Do not read displayed values of lookup columns" />
+			<Item Name="BaseElements.ReadDataUserTask1.Parameters.NumberOfRecords.Caption" Value="Number of records to read" />
+			<Item Name="BaseElements.ReadDataUserTask1.Parameters.NumberOfRecords.DisplayValue" Value="50" />
+			<Item Name="BaseElements.ReadDataUserTask1.Parameters.OrderInfo.Caption" Value="Columns order" />
+			<Item Name="BaseElements.ReadDataUserTask1.Parameters.OrderInfo.DisplayValue" Value="Number:1:1" />
+			<Item Name="BaseElements.ReadDataUserTask1.Parameters.ReadSomeTopRecords.Caption" Value="Read first" />
+			<Item Name="BaseElements.ReadDataUserTask1.Parameters.ReadSomeTopRecords.DisplayValue" Value="true" />
+			<Item Name="BaseElements.ReadDataUserTask1.Parameters.ResultCompositeObjectList.Caption" Value="Collection of records" />
+			<Item Name="BaseElements.ReadDataUserTask1.Parameters.ResultCount.Caption" Value="Number of records" />
+			<Item Name="BaseElements.ReadDataUserTask1.Parameters.ResultDateTimeFunction.Caption" Value="Function result" />
+			<Item Name="BaseElements.ReadDataUserTask1.Parameters.ResultEntity.Caption" Value="First item of resulting collection" />
+			<Item Name="BaseElements.ReadDataUserTask1.Parameters.ResultEntityCollection.Caption" Value="Resulting collection" />
+			<Item Name="BaseElements.ReadDataUserTask1.Parameters.ResultFloatFunction.Caption" Value="Function result" />
+			<Item Name="BaseElements.ReadDataUserTask1.Parameters.ResultIntegerFunction.Caption" Value="Function result" />
+			<Item Name="BaseElements.ReadDataUserTask1.Parameters.ResultRowsCount.Caption" Value="Number of records read" />
+			<Item Name="BaseElements.ReadDataUserTask1.Parameters.ResultType.Caption" Value="Type of result" />
+			<Item Name="BaseElements.ReadDataUserTask1.Parameters.ResultType.DisplayValue" Value="0" />
+			<Item Name="BaseElements.ReadDataUserTask2.Caption" Value="ЧД Сервисный договор" />
+			<Item Name="BaseElements.ReadDataUserTask2.Parameters.AggregationColumnName.Caption" Value="Name of aggregate function column" />
+			<Item Name="BaseElements.ReadDataUserTask2.Parameters.CanReadUncommitedData.Caption" Value="Read uncommitted data" />
+			<Item Name="BaseElements.ReadDataUserTask2.Parameters.ConsiderTimeInFilter.Caption" Value="Consider time in the filter" />
+			<Item Name="BaseElements.ReadDataUserTask2.Parameters.ConsiderTimeInFilter.DisplayValue" Value="false" />
+			<Item Name="BaseElements.ReadDataUserTask2.Parameters.DataSourceFilters.Caption" Value="Data source of filters" />
+			<Item Name="BaseElements.ReadDataUserTask2.Parameters.EntityColumnMetaPathes.Caption" Value="Columns to read" />
+			<Item Name="BaseElements.ReadDataUserTask2.Parameters.FunctionType.Caption" Value="Aggregate function type" />
+			<Item Name="BaseElements.ReadDataUserTask2.Parameters.IgnoreDisplayValues.Caption" Value="Do not read displayed values of lookup columns" />
+			<Item Name="BaseElements.ReadDataUserTask2.Parameters.NumberOfRecords.Caption" Value="Number of records to read" />
+			<Item Name="BaseElements.ReadDataUserTask2.Parameters.OrderInfo.Caption" Value="Columns order" />
+			<Item Name="BaseElements.ReadDataUserTask2.Parameters.ReadSomeTopRecords.Caption" Value="Read first" />
+			<Item Name="BaseElements.ReadDataUserTask2.Parameters.ResultCompositeObjectList.Caption" Value="Collection of records" />
+			<Item Name="BaseElements.ReadDataUserTask2.Parameters.ResultCount.Caption" Value="Number of records" />
+			<Item Name="BaseElements.ReadDataUserTask2.Parameters.ResultDateTimeFunction.Caption" Value="Function result" />
+			<Item Name="BaseElements.ReadDataUserTask2.Parameters.ResultEntity.Caption" Value="First item of resulting collection" />
+			<Item Name="BaseElements.ReadDataUserTask2.Parameters.ResultEntityCollection.Caption" Value="Resulting collection" />
+			<Item Name="BaseElements.ReadDataUserTask2.Parameters.ResultFloatFunction.Caption" Value="Function result" />
+			<Item Name="BaseElements.ReadDataUserTask2.Parameters.ResultIntegerFunction.Caption" Value="Function result" />
+			<Item Name="BaseElements.ReadDataUserTask2.Parameters.ResultRowsCount.Caption" Value="Number of records read" />
+			<Item Name="BaseElements.ReadDataUserTask2.Parameters.ResultType.Caption" Value="Type of result" />
+			<Item Name="BaseElements.ReadDataUserTask3.Caption" Value="Читать Значение времени разрешения" />
+			<Item Name="BaseElements.ReadDataUserTask3.Parameters.AggregationColumnName.Caption" Value="Name of aggregate function column" />
+			<Item Name="BaseElements.ReadDataUserTask3.Parameters.CanReadUncommitedData.Caption" Value="Read uncommitted data" />
+			<Item Name="BaseElements.ReadDataUserTask3.Parameters.ConsiderTimeInFilter.Caption" Value="Consider time in the filter" />
+			<Item Name="BaseElements.ReadDataUserTask3.Parameters.ConsiderTimeInFilter.DisplayValue" Value="false" />
+			<Item Name="BaseElements.ReadDataUserTask3.Parameters.DataSourceFilters.Caption" Value="Data source of filters" />
+			<Item Name="BaseElements.ReadDataUserTask3.Parameters.EntityColumnMetaPathes.Caption" Value="Columns to read" />
+			<Item Name="BaseElements.ReadDataUserTask3.Parameters.FunctionType.Caption" Value="Aggregate function type" />
+			<Item Name="BaseElements.ReadDataUserTask3.Parameters.IgnoreDisplayValues.Caption" Value="Do not read displayed values of lookup columns" />
+			<Item Name="BaseElements.ReadDataUserTask3.Parameters.NumberOfRecords.Caption" Value="Number of records to read" />
+			<Item Name="BaseElements.ReadDataUserTask3.Parameters.OrderInfo.Caption" Value="Columns order" />
+			<Item Name="BaseElements.ReadDataUserTask3.Parameters.ReadSomeTopRecords.Caption" Value="Read first" />
+			<Item Name="BaseElements.ReadDataUserTask3.Parameters.ResultCompositeObjectList.Caption" Value="Collection of records" />
+			<Item Name="BaseElements.ReadDataUserTask3.Parameters.ResultCount.Caption" Value="Number of records" />
+			<Item Name="BaseElements.ReadDataUserTask3.Parameters.ResultDateTimeFunction.Caption" Value="Function result" />
+			<Item Name="BaseElements.ReadDataUserTask3.Parameters.ResultEntity.Caption" Value="First item of resulting collection" />
+			<Item Name="BaseElements.ReadDataUserTask3.Parameters.ResultEntityCollection.Caption" Value="Resulting collection" />
+			<Item Name="BaseElements.ReadDataUserTask3.Parameters.ResultFloatFunction.Caption" Value="Function result" />
+			<Item Name="BaseElements.ReadDataUserTask3.Parameters.ResultIntegerFunction.Caption" Value="Function result" />
+			<Item Name="BaseElements.ReadDataUserTask3.Parameters.ResultRowsCount.Caption" Value="Number of records read" />
+			<Item Name="BaseElements.ReadDataUserTask3.Parameters.ResultType.Caption" Value="Type of result" />
+			<Item Name="BaseElements.ReadDataUserTask5.Caption" Value="ЧД родителя контрагента" />
+			<Item Name="BaseElements.ReadDataUserTask5.Parameters.AggregationColumnName.Caption" Value="Name of aggregate function column" />
+			<Item Name="BaseElements.ReadDataUserTask5.Parameters.CanReadUncommitedData.Caption" Value="Read uncommitted data" />
+			<Item Name="BaseElements.ReadDataUserTask5.Parameters.ConsiderTimeInFilter.Caption" Value="Consider time in the filter" />
+			<Item Name="BaseElements.ReadDataUserTask5.Parameters.ConsiderTimeInFilter.DisplayValue" Value="false" />
+			<Item Name="BaseElements.ReadDataUserTask5.Parameters.DataSourceFilters.Caption" Value="Data source of filters" />
+			<Item Name="BaseElements.ReadDataUserTask5.Parameters.EntityColumnMetaPathes.Caption" Value="Columns to read" />
+			<Item Name="BaseElements.ReadDataUserTask5.Parameters.FunctionType.Caption" Value="Aggregate function type" />
+			<Item Name="BaseElements.ReadDataUserTask5.Parameters.IgnoreDisplayValues.Caption" Value="Do not read displayed values of lookup columns" />
+			<Item Name="BaseElements.ReadDataUserTask5.Parameters.NumberOfRecords.Caption" Value="Number of records to read" />
+			<Item Name="BaseElements.ReadDataUserTask5.Parameters.OrderInfo.Caption" Value="Columns order" />
+			<Item Name="BaseElements.ReadDataUserTask5.Parameters.ReadSomeTopRecords.Caption" Value="Read first" />
+			<Item Name="BaseElements.ReadDataUserTask5.Parameters.ResultCompositeObjectList.Caption" Value="Collection of records" />
+			<Item Name="BaseElements.ReadDataUserTask5.Parameters.ResultCount.Caption" Value="Number of records" />
+			<Item Name="BaseElements.ReadDataUserTask5.Parameters.ResultDateTimeFunction.Caption" Value="Function result" />
+			<Item Name="BaseElements.ReadDataUserTask5.Parameters.ResultEntity.Caption" Value="First item of resulting collection" />
+			<Item Name="BaseElements.ReadDataUserTask5.Parameters.ResultEntityCollection.Caption" Value="Resulting collection" />
+			<Item Name="BaseElements.ReadDataUserTask5.Parameters.ResultFloatFunction.Caption" Value="Function result" />
+			<Item Name="BaseElements.ReadDataUserTask5.Parameters.ResultIntegerFunction.Caption" Value="Function result" />
+			<Item Name="BaseElements.ReadDataUserTask5.Parameters.ResultRowsCount.Caption" Value="Number of records read" />
+			<Item Name="BaseElements.ReadDataUserTask5.Parameters.ResultType.Caption" Value="Type of result" />
+			<Item Name="BaseElements.ScriptTask1.Caption" Value="Задание-сценарий 1" />
+			<Item Name="BaseElements.ScriptTask2.Caption" Value="Найти контрагента" />
+			<Item Name="BaseElements.ScriptTask3.Caption" Value="Задание-сценарий 3" />
+			<Item Name="BaseElements.ScriptTask4.Caption" Value="Применяем общий шаблон" />
+			<Item Name="BaseElements.ScriptTask5.Caption" Value="Задание-сценарий 5" />
+			<Item Name="BaseElements.ScriptTask6.Caption" Value="Задание-сценарий 6" />
+			<Item Name="BaseElements.ScriptTask7.Caption" Value="Задание-сценарий 7" />
+			<Item Name="BaseElements.StartSignal1.Caption" Value="Добавлено обращение" />
+			<Item Name="BaseElements.StartSignal1.Parameters.RecordId.Caption" Value="Уникальный идентификатор записи" />
+			<Item Name="BaseElements.UserTask1.Caption" Value="Добавить рабочие дни 1" />
+			<Item Name="BaseElements.UserTask1.Parameters.CalendarId.Caption" Value="Calendar" />
+			<Item Name="BaseElements.UserTask1.Parameters.CalendarId.DisplayValue" Value="[#System setting.Base personal calendar#]" />
+			<Item Name="BaseElements.UserTask1.Parameters.DateEnd.Caption" Value="End date" />
+			<Item Name="BaseElements.UserTask1.Parameters.DateStart.Caption" Value="Start date" />
+			<Item Name="BaseElements.UserTask1.Parameters.DateStart.DisplayValue" Value="[#Системная переменная.Текущее значение даты и времени#]" />
+			<Item Name="BaseElements.UserTask1.Parameters.NumberDays.Caption" Value="Days count" />
+			<Item Name="BaseElements.UserTask1.Parameters.NumberDays.DisplayValue" Value="[#Значение времени разрешения#]" />
+			<Item Name="Caption" Value="Отправка уведомления по истечении времени работы над заявкой" />
+			<Item Name="LaneSets.LaneSet1.Caption" Value="LaneSet 1" />
+			<Item Name="LaneSets.LaneSet1.Lanes.Lane1.Caption" Value="Lane 1" />
+			<Item Name="NotificationCaption.Caption" Value="Заголовок экземпляра процесса" />
+			<Item Name="NotificationCaption.DisplayValue" Value="[#Название процесса#]" />
+			<Item Name="Parameters.AccountIdParameter.Caption" Value="Id контрагента" />
+			<Item Name="Parameters.CaseIdParameter.Caption" Value="Id обращения" />
+			<Item Name="Parameters.CaseNumberParameter.Caption" Value="Номер обращения" />
+			<Item Name="Parameters.CaseNumberParameter.DisplayValue" Value="[#ЧД Обращение.Первый элемент результирующей коллекции.Номер#]" />
+			<Item Name="Parameters.FlagParameter.Caption" Value="Флаг продолжения " />
+			<Item Name="Parameters.FlagParameter.DisplayValue" Value="[#Логическое значение.Нет#]" />
+			<Item Name="Parameters.OwnerIdParameter.Caption" Value="Id ответственного" />
+			<Item Name="Parameters.OwnerIdParameter.DisplayValue" Value="[#ЧД Обращение.Первый элемент результирующей коллекции.Ответственный#]" />
+			<Item Name="Parameters.PlanParameter.Caption" Value="Планируемое время реализации" />
+			<Item Name="Parameters.ResolveTimeValueParameter.Caption" Value="Значение времени разрешения" />
+			<Item Name="Parameters.ResolveTimeValueParameter.DisplayValue" Value="[#Читать Значение времени разрешения.Первый элемент результирующей коллекции.Значение времени разрешения#]" />
+			<Item Name="Parameters.TimeListParameter.Caption" Value="Массив значений времени" />
+		</Items>
+	</Group>
+</Resources>

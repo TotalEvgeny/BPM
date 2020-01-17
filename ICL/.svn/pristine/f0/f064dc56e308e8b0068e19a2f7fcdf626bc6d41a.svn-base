@@ -1,0 +1,22 @@
+﻿{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "ClientUnitSchemaManager",
+      "UId": "0f7c5d41-2053-4ada-9c4c-7f91423873d6",
+      "A2": "ICLDateTime",
+      "A5": "92e493b2-7fa6-411c-99b1-a95a26c2094e",
+      "B1": [],
+      "B2": [],
+      "B3": [],
+      "B6": "22fc7faa-2155-4f76-8258-0108fc7d3d22",
+      "B8": "7.14.0.597",
+      "HD1": "50e3acc0-26fc-4237-a095-849a1d534bd3",
+      "HD4": 1,
+      "HD6": "null",
+      "HD5": [],
+      "HD7": [],
+      "HD8": [],
+      "HD11": []
+    }
+  }
+}

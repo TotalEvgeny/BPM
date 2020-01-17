@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="fr-FR">
+	<Group Type="String">
+		<Items>
+			<Item Name="EventsProcessSchema.Caption" Value="Processus métier" />
+			<Item Name="EventsProcessSchema.LocalizableStrings.BodyMessage.Value" Value="Votre validation est  nécessaire. Pour définir la validation, suivez le lien &lt;a href = {0}&gt;&lt;/a&gt;" />
+			<Item Name="EventsProcessSchema.LocalizableStrings.PopupBodyDateFormat.Caption" Value="PopupBodyDateFormat" />
+			<Item Name="EventsProcessSchema.LocalizableStrings.PopupBodyDateFormat.Value" Value="aaaa/mm/jj" />
+			<Item Name="EventsProcessSchema.LocalizableStrings.PopupBodyDefaultTemplate.Value" Value="{0}{1}" />
+			<Item Name="EventsProcessSchema.LocalizableStrings.PopupBodyTemplate.Caption" Value="PopupBodyTemplate" />
+			<Item Name="EventsProcessSchema.LocalizableStrings.PopupBodyTemplate.Value" Value="{0}:{1} datée du {2}" />
+			<Item Name="EventsProcessSchema.LocalizableStrings.PopupTitleTemplate.Caption" Value="PopupTitleTemplate" />
+			<Item Name="EventsProcessSchema.LocalizableStrings.PopupTitleTemplate.Value" Value="Validation nécessaire" />
+			<Item Name="EventsProcessSchema.LocalizableStrings.SubjectString.Value" Value="Demande de validation" />
+		</Items>
+	</Group>
+</Resources>

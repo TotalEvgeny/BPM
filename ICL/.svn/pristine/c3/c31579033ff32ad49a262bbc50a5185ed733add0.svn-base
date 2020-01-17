@@ -1,0 +1,278 @@
+namespace Terrasoft.Configuration.Calendars
+{
+    using System;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.ServiceModel;
+    using System.ServiceModel.Activation;
+    using System.ServiceModel.Web;
+    using System.Web;
+    using Core;
+    using Core.Factories;
+    using Newtonsoft.Json;
+    using TermCalculationService;
+    using Terrasoft.Common;
+
+    using Terrasoft.Core;
+    using Terrasoft.Core.DB;
+    using Terrasoft.Core.Entities;
+
+    #region Class : CaseTermCalculationService
+
+    /// <summary>
+    /// A class-service for case term calculation.
+    /// </summary>
+    [ServiceContract]
+    [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Required)]
+    public class ICLITSMCaseTermCalculationService
+    {
+
+        #region Class: ServiceTermStringResponse
+
+        [Serializable]
+        [DataContract]
+        protected class ServiceTermStringResponse
+        {
+            #region Properties: Public
+
+            [DataMember(Name = "ReactionTime")]
+            public string ReactionTime
+            {
+                get;
+                set;
+            }
+
+            [DataMember(Name = "SolutionTime")]
+            public string SolutionTime
+            {
+                get;
+                set;
+            }
+
+            #endregion
+
+        }
+
+        #endregion
+
+        #region Fields : Private
+
+        private static readonly string _dateFormat = "yyyy'-'MM'-'dd HH':'mm':'ss";
+        private UserConnection _userConnection;
+
+        #endregion
+
+        #region Properties : Private
+
+        /// <summary>
+        /// User connection.
+        /// </summary>
+        private UserConnection UserConnection
+        {
+            get
+            {
+                return _userConnection ??
+                    (_userConnection = (UserConnection)HttpContext.Current.Session["UserConnection"]);
+            }
+        }
+
+        #endregion
+
+        #region Methods: Private
+
+        /// <summary>
+        /// Replaces strings in given dictionary by guids.
+        /// </summary>
+        /// <param name="oldDictionary">Initial dictionary.</param>
+        /// <returns>Dictionary with guids.</returns>
+        private Dictionary<string, object> GetDictionaryWithGuids(Dictionary<string, object> oldDictionary)
+        {
+            var resultDictionary = new Dictionary<string, object>();
+            foreach (var element in oldDictionary)
+            {
+                Guid guid;
+                var value = Guid.TryParse(element.Value.ToString(), out guid) ? guid : element.Value;
+                resultDictionary.Add(element.Key, value);
+            }
+            return resultDictionary;
+        }
+
+        #endregion
+
+        #region Methods: Public
+
+        /// <summary>
+        /// Counts reaction time and a solution time to Case.
+        /// </summary>
+        /// <param name="conditions">Json-formatted string conditions for terms counting.</param>
+        /// <param name="registrationDate">Json-formatted string of case registration date.</param>
+        /// <returns>An object that contains the reaction time and solution time.</returns>
+        [OperationContract]
+        [WebInvoke(Method = "POST", RequestFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped,
+            ResponseFormat = WebMessageFormat.Json)]
+        public string CalculateTerms(Dictionary<string, object> arguments, string registrationDate)
+        {
+            Dictionary<string, object> featuredDictionary = GetDictionaryWithGuids(arguments);
+            var parsedRegistrationDate = DateTime.Parse(registrationDate);
+            var stringResponse = new ServiceTermStringResponse();
+            try
+            {
+                var userConnectionArg = new ConstructorArgument("userConnection", UserConnection);
+                var entryPoint = ClassFactory.Get<CaseTermCalculateEntryPoint>(userConnectionArg);
+                //ServiceTermResponse response = entryPoint.CalculateTerms(featuredDictionary, parsedRegistrationDate);
+                ServiceTermResponse response = CalculateTerms(featuredDictionary, parsedRegistrationDate);
+                if (response.ReactionTime != null)
+                {
+                    stringResponse.ReactionTime = response.ReactionTime.Value.ToString(_dateFormat);
+                }
+                if (response.SolutionTime != null)
+                {
+                    stringResponse.SolutionTime = response.SolutionTime.Value.ToString(_dateFormat);
+                }
+            }
+            catch (Exception e)
+            {
+                return e.Message;
+            }
+            return JsonConvert.SerializeObject(stringResponse);
+        }
+
+        public ServiceTermResponse CalculateTerms(Dictionary<string, object> arguments, DateTime startDate)
+        {
+            var response = new ServiceTermResponse();
+            var userConnectionArg = new ConstructorArgument("userConnection", UserConnection);
+            var argumentsArg = new ConstructorArgument("arguments", arguments);
+            var selector = ClassFactory.Get<CaseTermIntervalSelector>(userConnectionArg);
+            var termInterval = selector.Get(arguments) as CaseTermInterval;
+            var mask = termInterval.GetMask();
+            var intervalResolveTerm = 0;
+            var procent = 0;
+            var userTimeZone = UserConnection.CurrentUser.TimeZone;
+
+            if (mask != CaseTermStates.None)
+            {
+                var intervalReader = ClassFactory.Get<CaseActiveIntervalReader>(userConnectionArg, argumentsArg);
+
+                IEnumerable<DateTimeInterval> intervals = intervalReader.GetActiveIntervals();
+                if (intervals.IsEmpty())
+                {
+                    //termInterval.ResolveTerm.Value = 10;
+                    response = ExecuteCalculateTerms(startDate, termInterval, userTimeZone, mask);
+                }
+                else
+                {
+                    var dateTime = ConvertFromUtc(DateTime.UtcNow, userTimeZone);
+                    response = ExecuteRecalculateTerms(dateTime, termInterval, intervals, userTimeZone, mask);
+                }
+            }
+            //поиск порядка уведомлений ICLTimeToNotifyDic
+            var caseId = Guid.Parse(arguments["CaseId"].ToString());
+            var accountId = Guid.Parse(arguments["AccountId"].ToString());
+            var del = new Delete(UserConnection).From("ICLCaseReminder")
+                .Where("ICLCaseId").IsEqual(new QueryParameter(caseId)) as Delete;
+            del.Execute();
+            if (termInterval.ResolveTerm.Type == TimeUnit.WorkingHour || termInterval.ResolveTerm.Type == TimeUnit.Hour)
+            {
+                intervalResolveTerm = termInterval.ResolveTerm.Value * 60;//минуты
+            }
+            if (termInterval.ResolveTerm.Type == TimeUnit.WorkingDay || termInterval.ResolveTerm.Type == TimeUnit.Day)
+            {
+                intervalResolveTerm = termInterval.ResolveTerm.Value * 60 * 24;//минуты
+            }
+            if (termInterval.ResolveTerm.Type == TimeUnit.WorkingMinute || termInterval.ResolveTerm.Type == TimeUnit.Minute)
+            {
+                intervalResolveTerm = termInterval.ResolveTerm.Value;//минуты
+            }
+            termInterval.ResolveTerm.Type = TimeUnit.WorkingMinute;
+
+            var collnotify = FindCollectionTimeNotify(accountId);
+            foreach (ICLTimeToNotifyDic notify in collnotify)
+            {
+                //проценты
+                if (notify.ICLUnitId.Equals(new Guid("7a5e5d2d-7400-4469-9674-3a74d6b32de4")))
+                {
+                    termInterval.ResolveTerm.Value = intervalResolveTerm * notify.ICLValue / 100;
+                }
+                else
+                    termInterval.ResolveTerm.Value = notify.ICLValue;
+                var notifyTime = ExecuteCalculateTerms(startDate, termInterval, userTimeZone, mask);
+
+                ICLCaseReminder iclCaseReminder = new ICLCaseReminder(UserConnection);
+                iclCaseReminder.SetDefColumnValues();
+                iclCaseReminder.ICLCaseId = caseId;
+                iclCaseReminder.ICLTimeSend = notifyTime.SolutionTime.GetValueOrDefault();
+                iclCaseReminder.ICLTimeRuleId = notify.Id;
+                if (iclCaseReminder.ICLTimeSend < ConvertFromUtc(DateTime.UtcNow, userTimeZone))
+                    iclCaseReminder.ICLStatusId = new Guid("095CB711-8480-4EA5-9D25-E567648A3255"); //просрочена
+                else
+                    iclCaseReminder.ICLStatusId = new Guid("be9c92ca-b092-4950-8548-bb2160a61f8b");//не начата
+                iclCaseReminder.ICLOverTimeSolution = intervalResolveTerm - termInterval.ResolveTerm.Value;
+                iclCaseReminder.Save();
+            }
+            return response;
+        }
+
+        private EntityCollection FindCollectionTimeNotify(Guid idAccount)
+        {
+            EntitySchemaQuery notifyEsq = new EntitySchemaQuery(UserConnection.EntitySchemaManager, "ICLTimeToNotifyDic");
+            notifyEsq.UseAdminRights = false;
+            notifyEsq.AddAllSchemaColumns();
+            notifyEsq.Filters.Add(notifyEsq.CreateFilterWithParameters(FilterComparisonType.Equal, "ICLAccount", idAccount));
+            var collNotifyEsq = notifyEsq.GetEntityCollection(UserConnection);
+            if (collNotifyEsq.Count > 0)
+            {
+                return collNotifyEsq;
+            }
+            else
+            {
+                notifyEsq = new EntitySchemaQuery(UserConnection.EntitySchemaManager, "ICLTimeToNotifyDic");
+                notifyEsq.AddAllSchemaColumns();
+                notifyEsq.Filters.Clear();
+
+                notifyEsq.Filters.Add(notifyEsq.CreateFilterWithParameters(FilterComparisonType.Equal, "ICLIsCommon", true));
+                collNotifyEsq = notifyEsq.GetEntityCollection(UserConnection);
+                return collNotifyEsq;
+            }
+        }
+
+        private ServiceTermResponse ExecuteCalculateTerms(DateTime startDate, CaseTermInterval termInterval,
+                TimeZoneInfo userTimeZone, CaseTermStates mask)
+        {
+            var calendarutility = new CalendarUtility(UserConnection);
+            var response = new ServiceTermResponse();
+            response.ReactionTime = mask.HasFlag(CaseTermStates.ContainsResponse)
+                ? calendarutility.Add(startDate, termInterval.ResponseTerm, userTimeZone) as DateTime?
+                : null;
+            response.SolutionTime = mask.HasFlag(CaseTermStates.ContainsResolve)
+                ? calendarutility.Add(startDate, termInterval.ResolveTerm, userTimeZone) as DateTime?
+                : null;
+            return response;
+        }
+
+        private DateTime ConvertFromUtc(DateTime dateTime, TimeZoneInfo timeZoneInfo)
+        {
+            return TimeZoneInfo.ConvertTime(dateTime, timeZoneInfo);
+        }
+
+        private ServiceTermResponse ExecuteRecalculateTerms(DateTime startDate, CaseTermInterval termInterval,
+                IEnumerable<DateTimeInterval> intervals, TimeZoneInfo userTimeZone, CaseTermStates mask)
+        {
+            var calendarutility = new CalendarUtility(UserConnection);
+            var response = new ServiceTermResponse();
+            var dateTime = ConvertFromUtc(DateTime.UtcNow, userTimeZone);
+            response.ReactionTime = mask.HasFlag(CaseTermStates.ContainsResponse)
+                ? calendarutility.Add(dateTime, termInterval.ResponseTerm, intervals, userTimeZone) as DateTime?
+                : null;
+            response.SolutionTime = mask.HasFlag(CaseTermStates.ContainsResolve)
+                ? calendarutility.Add(dateTime, termInterval.ResolveTerm, intervals, userTimeZone) as DateTime?
+                : null;
+            return response;
+        }
+
+        #endregion
+
+    }
+
+    #endregion
+
+}
