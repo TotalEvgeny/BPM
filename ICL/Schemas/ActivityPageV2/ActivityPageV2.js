@@ -1,4 +1,5 @@
-define("ActivityPageV2", [], function() {
+define("ActivityPageV2", [], function() { 
+
 	return {
 		entitySchemaName: "Activity",
 		attributes: {},
