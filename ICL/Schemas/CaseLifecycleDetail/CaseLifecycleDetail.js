@@ -16,7 +16,6 @@ define("CaseLifecycleDetail", [], function() {
 		//  * @param {Object} profile ###### #######.
 		//  */
 		// convertProfileColumns: function(profileColumns, profile) {
-		// 	debugger;
 		// 	if (profile && profile.isTiled !== undefined) {
 		// 		var isTiled = profile.isTiled;
 		// 		var gridsColumnsConfig = isTiled ? profile.tiledConfig : profile.listedConfig;
