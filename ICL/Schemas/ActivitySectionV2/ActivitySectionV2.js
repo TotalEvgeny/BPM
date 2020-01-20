@@ -5,5 +5,8 @@ define("ActivitySectionV2", [], function() {
 		diff: /**SCHEMA_DIFF*/[]/**SCHEMA_DIFF*/,
 		methods: {
 		}
+
+
+
 	};
 });
