@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "d64e90aa-41d0-4f6c-834f-a52e86f8c465",
+    "Name": "ICLSchema2Detail",
+    "ModifiedOnUtc": "\/Date(1573453361000)\/",
+    "Parent": {
+      "UId": "01eb38ee-668a-42f0-999d-c2534f979089",
+      "Name": "BaseGridDetailV2"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Схема детали: \"Напоминания по обращению\"",
+    "DependsOn": []
+  }
+}

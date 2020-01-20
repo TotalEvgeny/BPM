@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "8484923f-215d-40f3-9dbb-6788fcbfca3b",
+    "Name": "ICLSendNotify",
+    "ModifiedOnUtc": "\/Date(1573114831000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Бизнес-процесс 1",
+    "DependsOn": []
+  }
+}

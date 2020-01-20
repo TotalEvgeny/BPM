@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "d9d4fdd8-8832-4f1e-a0bb-bdb3882cb6eb",
+    "Name": "ICLSendNotifyCase",
+    "ModifiedOnUtc": "\/Date(1573110667000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Отправка уведомления по истечении времени работы над заявкой",
+    "DependsOn": []
+  }
+}

@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "faf9166f-6ffb-458b-b856-1f1c06b1fc0f",
+    "Name": "CaseLifecycleDetail",
+    "ModifiedOnUtc": "\/Date(1571752420000)\/",
+    "Parent": {
+      "UId": "ec034524-d9a4-4cf6-b896-745b2841f112",
+      "Name": "CaseLifecycleDetail"
+    },
+    "ExtendParent": true,
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Схема детали: \"Жизненный цикл обращения\"",
+    "DependsOn": []
+  }
+}

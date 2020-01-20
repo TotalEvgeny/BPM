@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "b1e9e669-99d8-487c-bd68-05cd46a21b4d",
+    "Name": "ICLConfigurationConstants",
+    "ModifiedOnUtc": "\/Date(1573805353000)\/",
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "ICLConfigurationConstants",
+    "DependsOn": []
+  }
+}

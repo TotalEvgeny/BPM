@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "89279b0b-ff25-45a2-b93f-2733b292a243",
+    "Name": "ICLCaseReminder",
+    "ModifiedOnUtc": "\/Date(1573453407000)\/",
+    "Parent": {
+      "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
+      "Name": "BaseEntity"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Напоминания по обращению",
+    "DependsOn": []
+  }
+}

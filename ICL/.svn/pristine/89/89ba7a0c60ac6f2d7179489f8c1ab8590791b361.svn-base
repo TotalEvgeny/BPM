@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "f1cd0311-57f7-4cd9-974f-f760d1cb7640",
+    "Name": "ICLEntityEvents",
+    "ModifiedOnUtc": "\/Date(1573822412000)\/",
+    "ManagerName": "SourceCodeSchemaManager",
+    "Caption": "События сущностей",
+    "DependsOn": []
+  }
+}

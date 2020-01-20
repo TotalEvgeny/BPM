@@ -1,0 +1,10 @@
+﻿{
+  "SqlScript": {
+    "UId": "3311dadf-0402-400c-8aa4-ece003673cc7",
+    "Name": "iclFindAndUpdateNotifyCaseForTempStatus",
+    "DBEngineType": 0,
+    "InstallType": 0,
+    "ModifiedOnUtc": "\/Date(1573569693000)\/",
+    "DependsOn": []
+  }
+}

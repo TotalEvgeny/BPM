@@ -1,0 +1,19 @@
+﻿{
+  "Descriptor": {
+    "UId": "22fc7faa-2155-4f76-8258-0108fc7d3d22",
+    "PackageVersion": "1.0.0",
+    "Name": "ICL",
+    "ModifiedOnUtc": "\/Date(1571118062000)\/",
+    "Maintainer": "ICL",
+    "DependsOn": [
+      {
+        "UId": "03274398-cdd6-4cc8-ac0f-cd5bd2bdda57",
+        "Name": "ITSM"
+      },
+      {
+        "UId": "1189cd95-ee7d-4f33-97d3-fd3f95a2cfad",
+        "Name": "Prioritization"
+      }
+    ]
+  }
+}

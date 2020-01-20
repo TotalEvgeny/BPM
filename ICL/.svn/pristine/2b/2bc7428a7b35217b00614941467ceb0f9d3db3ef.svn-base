@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "e2174ad2-d370-402e-9955-61f1eaa79953",
+    "Name": "ICLProcess1ICL1",
+    "ModifiedOnUtc": "\/Date(1562934157000)\/",
+    "Parent": {
+      "UId": "9ace1139-e4b9-4962-af80-c598c3f38f17",
+      "Name": "ICLProcess1"
+    },
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Уведомление об окончании срока действия серв. договора",
+    "DependsOn": []
+  }
+}

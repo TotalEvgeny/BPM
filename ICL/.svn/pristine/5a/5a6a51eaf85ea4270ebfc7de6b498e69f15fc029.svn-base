@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="ru-RU">
+	<Group Type="String">
+		<Items>
+			<Item Name="BaseElements.ChangeDataUserTask1.Caption" Value="Clear owner on reopen case" />
+			<Item Name="BaseElements.ChangeDataUserTask1.Parameters.DataSourceFilters.Caption" Value="Фильтры источника данных" />
+			<Item Name="BaseElements.ChangeDataUserTask1.Parameters.EntitySchemaUId.Caption" Value="Объект" />
+			<Item Name="BaseElements.ChangeDataUserTask1.Parameters.IsMatchConditions.Caption" Value="Если объект соответствует условиям" />
+			<Item Name="BaseElements.ChangeDataUserTask1.Parameters.IsMatchConditions.DisplayValue" Value="true" />
+			<Item Name="BaseElements.ChangeDataUserTask1.Parameters.RecordColumnValues.Caption" Value="Значения полей" />
+			<Item Name="BaseElements.ConditionalSequenceFlow1.Caption" Value="Exit with out send email notification" />
+			<Item Name="BaseElements.ScriptTask.Caption" Value="Preparation of sending e-mail notification" />
+			<Item Name="BaseElements.StartSignal1.Caption" Value="Add case" />
+			<Item Name="BaseElements.StartSignal1.EntityFilters.Value" Value="{_isFilter:false,uId:&quot;b204f06f-8f89-4e45-bdce-3d3f0c407a85&quot;,name:&quot;FilterEdit&quot;,items:[{_isFilter:true,_filterSchemaUId:&quot;117d32f9-8275-4534-8411-1c66115ce9cd&quot;,uId:&quot;89b49267-65e6-4b31-857b-991b68d4eff7&quot;,leftExpression:{expressionType:&quot;SchemaColumn&quot;,metaPath:&quot;a71adaea-3464-4dee-bb4f-c7a535450ad7&quot;,caption:&quot;Status&quot;,referenceSchemaUId:&quot;99f35013-6b7a-47d6-b440-e3f1a0ba991c&quot;,dataValueType:{id:&quot;b295071f-7ea9-4e62-8d1a-919bf3732ff2&quot;,name:&quot;Lookup&quot;,isNumeric:false,editor:{controlTypeName:&quot;LookupEdit&quot;,controlXType:&quot;lookupedit&quot;},useClientEncoding:true}},comparisonType:&quot;IsNotNull&quot;}]}" />
+			<Item Name="BaseElements.StartSignal2.Caption" Value="Case status changed" />
+			<Item Name="BaseElements.StartSignal2.EntityFilters.Value" Value="{_isFilter:false,uId:&quot;1ba12059-980b-46cb-98c5-4d64cc677a51&quot;,name:&quot;FilterEdit&quot;,items:[{_isFilter:true,_filterSchemaUId:&quot;117d32f9-8275-4534-8411-1c66115ce9cd&quot;,uId:&quot;a3c6d63c-b4c9-4759-afd2-044951e907d9&quot;,trimDateTimeParameterToDate:true,leftExpression:{expressionType:&quot;SchemaColumn&quot;,metaPath:&quot;a71adaea-3464-4dee-bb4f-c7a535450ad7&quot;,caption:&quot;Status&quot;,referenceSchemaUId:&quot;99f35013-6b7a-47d6-b440-e3f1a0ba991c&quot;,dataValueType:{id:&quot;b295071f-7ea9-4e62-8d1a-919bf3732ff2&quot;,name:&quot;Lookup&quot;,isNumeric:false,editor:{controlTypeName:&quot;LookupEdit&quot;,controlXType:&quot;lookupedit&quot;},useClientEncoding:true}},comparisonType:&quot;IsNotNull&quot;}]}" />
+			<Item Name="BaseElements.SubProcessSendEmail.Caption" Value="Sub-process send email notification to contact" />
+			<Item Name="BaseElements.SubProcessSendEmail.Parameters.CaseId.Caption" Value="Идентификатор обращения" />
+			<Item Name="BaseElements.SubProcessSendEmail.Parameters.CaseId.DisplayValue" Value="[#Case record Id#]" />
+			<Item Name="BaseElements.SubProcessSendEmail.Parameters.ParentActivityId.Caption" Value="Родительская активность" />
+			<Item Name="BaseElements.SubProcessSendEmail.Parameters.SenderEmail.Caption" Value="Почта отправителя" />
+			<Item Name="BaseElements.SubProcessSendEmail.Parameters.SenderEmail.DisplayValue" Value="[#Email Sender#]" />
+			<Item Name="BaseElements.SubProcessSendEmail.Parameters.Subject.Caption" Value="Subject" />
+			<Item Name="BaseElements.SubProcessSendEmail.Parameters.TemplateId.Caption" Value="Код шаблона" />
+			<Item Name="BaseElements.SubProcessSendEmail.Parameters.TemplateId.DisplayValue" Value="[#Id email message template#]" />
+			<Item Name="BaseElements.Terminate1.Caption" Value="Exit" />
+			<Item Name="Caption" Value="Запуск процесса Отправка email сообщения контакту обращения (при смене состояния обращения)" />
+			<Item Name="LaneSets.LaneSet1.Caption" Value="Pool 1" />
+			<Item Name="LaneSets.LaneSet1.Lanes.Lane1.Caption" Value="Lane 1" />
+			<Item Name="Parameters.CaseRecordId.Caption" Value="Case record Id" />
+			<Item Name="Parameters.CloseStatusId.Caption" Value="Close status id" />
+			<Item Name="Parameters.CloseStatusId.DisplayValue" Value="[#Справочник.Состояние обращения.Закрыто#]" />
+			<Item Name="Parameters.EmailSender.Caption" Value="Email Sender" />
+			<Item Name="Parameters.EmailTemplate.Caption" Value="Id email message template" />
+			<Item Name="Parameters.IsCloseAndExit.Caption" Value="Close case and exit?" />
+		</Items>
+	</Group>
+</Resources>

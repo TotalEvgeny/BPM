@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="es-ES">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Страница обращения" />
+			<Item Name="LocalizableStrings.EmailTitleCaption.Caption" Value="Respuesta de caso" />
+			<Item Name="LocalizableStrings.EscalationTitle.Caption" Value="Problemas" />
+			<Item Name="LocalizableStrings.HideSystemMessagesString.Caption" Value="Ocultar los mensajes del sistema" />
+			<Item Name="LocalizableStrings.MessageHistoryGroupCaption.Caption" Value="Historial" />
+			<Item Name="LocalizableStrings.ParametersTabCaption.Caption" Value="Perfil de caso" />
+			<Item Name="LocalizableStrings.ProcessingTabCaption.Caption" Value="Procesamiento" />
+			<Item Name="LocalizableStrings.SchemaLocalizableString1.Caption" Value="Mensaje al usuario 1" />
+			<Item Name="LocalizableStrings.SearchForSimilarCasesButtonCaption.Caption" Value="Buscar casos similares" />
+			<Item Name="LocalizableStrings.ServiceItemTipMessage.Caption" Value="Editar esquema de página - sección &quot;Servicios&quot;" />
+			<Item Name="LocalizableStrings.ServicePactTipMessage.Caption" Value="ServicePactTipMessage" />
+			<Item Name="LocalizableStrings.ShowSystemMessagesString.Caption" Value="Mostrar los mensajes del sistema" />
+		</Items>
+	</Group>
+</Resources>

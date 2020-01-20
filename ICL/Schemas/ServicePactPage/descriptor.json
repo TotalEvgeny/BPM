@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "2d94a491-1a65-447b-9665-fd03c0b71b37",
+    "Name": "ServicePactPage",
+    "ModifiedOnUtc": "\/Date(1568820682000)\/",
+    "Parent": {
+      "UId": "3e8902b2-6591-4bb1-aa0d-247fb139e44b",
+      "Name": "ServicePactPage"
+    },
+    "ExtendParent": true,
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Edit page schema - \"Service contracts\" section",
+    "DependsOn": []
+  }
+}

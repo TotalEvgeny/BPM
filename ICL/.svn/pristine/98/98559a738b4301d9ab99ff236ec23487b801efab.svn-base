@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "34c1edde-131f-48aa-8cda-098bb1d31096",
+    "Name": "ICLInputBoxHelper",
+    "ModifiedOnUtc": "\/Date(1571080735000)\/",
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "ICLInputBoxHelper",
+    "DependsOn": []
+  }
+}

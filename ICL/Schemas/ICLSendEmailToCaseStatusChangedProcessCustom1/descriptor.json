@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "3934ae09-842c-493d-b612-ce50f3848722",
+    "Name": "ICLSendEmailToCaseStatusChangedProcessCustom1",
+    "ModifiedOnUtc": "\/Date(1568626133000)\/",
+    "Parent": {
+      "UId": "22405112-0a8c-4444-870f-deb07a0f7277",
+      "Name": "SendEmailToCaseStatusChangedProcess"
+    },
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Run process: Send email to contact on case status change",
+    "DependsOn": []
+  }
+}

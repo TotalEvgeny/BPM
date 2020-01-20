@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="ro-RO">
+	<Group Type="String">
+		<Items>
+			<Item Name="EventsProcessSchema.Caption" Value="Procesul de afaceri" />
+			<Item Name="EventsProcessSchema.LocalizableStrings.BodyMessage.Value" Value="Aprobarea Dvs este necesara. Pentru a seta aprobarea urmati &lt;a href = {0}&gt;link&lt;/a&gt;" />
+			<Item Name="EventsProcessSchema.LocalizableStrings.PopupBodyDateFormat.Caption" Value="PopupBodyDateFormat" />
+			<Item Name="EventsProcessSchema.LocalizableStrings.PopupBodyDateFormat.Value" Value="an/luna/zi" />
+			<Item Name="EventsProcessSchema.LocalizableStrings.PopupBodyDefaultTemplate.Value" Value="{0}{1}" />
+			<Item Name="EventsProcessSchema.LocalizableStrings.PopupBodyTemplate.Caption" Value="PopupBodyTemplate" />
+			<Item Name="EventsProcessSchema.LocalizableStrings.PopupBodyTemplate.Value" Value="{0}: {1} dated {2}" />
+			<Item Name="EventsProcessSchema.LocalizableStrings.PopupTitleTemplate.Caption" Value="PopupTitleTemplate" />
+			<Item Name="EventsProcessSchema.LocalizableStrings.PopupTitleTemplate.Value" Value="Aprobare necesare" />
+			<Item Name="EventsProcessSchema.LocalizableStrings.SubjectString.Value" Value="Solicitare de aprobare" />
+		</Items>
+	</Group>
+</Resources>

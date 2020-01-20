@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "5eed2041-272c-470e-a9c6-7453cbace7f2",
+    "Name": "ICLEstimateLinksGenerator",
+    "ModifiedOnUtc": "\/Date(1573711370000)\/",
+    "ManagerName": "SourceCodeSchemaManager",
+    "Caption": "ICLEstimateLinksGenerator",
+    "DependsOn": []
+  }
+}

@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "e759de1e-a288-4619-bef3-79940255c8a8",
+    "Name": "ICLCalendarServiceUtils",
+    "ModifiedOnUtc": "\/Date(1572441566000)\/",
+    "ManagerName": "SourceCodeSchemaManager",
+    "Caption": "Calendar service Utils",
+    "DependsOn": []
+  }
+}

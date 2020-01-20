@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "873140bb-0511-4f34-99c6-331318277f76",
+    "Name": "ICLAddBusinessDays",
+    "ModifiedOnUtc": "\/Date(1572441740000)\/",
+    "ManagerName": "ProcessUserTaskSchemaManager",
+    "Caption": "Add business days",
+    "DependsOn": []
+  }
+}

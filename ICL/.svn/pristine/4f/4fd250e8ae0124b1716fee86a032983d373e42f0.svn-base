@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Columns.Category.Caption" Value="Тип обращения" />
+			<Item Name="Columns.ICLContactEmail.Caption" Value="Email" />
+			<Item Name="Columns.ICLContactMobilePhone.Caption" Value="Мобильный телефон" />
+			<Item Name="Columns.ICLContactName.Caption" Value="ФИО контакта" />
+			<Item Name="Columns.ICLContactPhones.Caption" Value="Телефоны контакта" />
+			<Item Name="Columns.ICLContactWorkPhone.Caption" Value="Рабочий телефон" />
+			<Item Name="Columns.ICLCustomerASURV.Caption" Value="Заказчик АСУРВ" />
+			<Item Name="Columns.ICLGroup.Caption" Value="Группа ЕИС КС" />
+			<Item Name="Columns.ICLPrASURV.Caption" Value="Проект АСУРВ" />
+			<Item Name="Columns.ICLProjectASURV.Caption" Value="Проект АСУРВ" />
+			<Item Name="Columns.ICLReason.Caption" Value="Причина возникновения обращения" />
+			<Item Name="Columns.ICLSetDate.Caption" Value="Отложен до срока" />
+			<Item Name="Columns.ICLString1.Caption" Value="Номер заявки в службе поддержки производителя" />
+			<Item Name="Columns.ICLTimeSpend.Caption" Value="Затраченное время (часы)" />
+			<Item Name="Columns.ICLUsingContactEmail.Caption" Value="Не использовать почту контакта" />
+			<Item Name="Columns.ICLZakASURV.Caption" Value="Заказчик АСУРВ" />
+			<Item Name="EventsProcessSchema.BaseElements.EventSubProcess7_bc6bc2fa28cd41239079c66e072c0606.Caption" Value="CaseInserting" />
+			<Item Name="EventsProcessSchema.BaseElements.EventSubProcess8_19433f63cfce4552996c3f3c97a6f29f.Caption" Value="CaseUpdating" />
+			<Item Name="EventsProcessSchema.BaseElements.ScriptTask3_bc3cc03fd39342548c26063da58156b6.Caption" Value="Задание-сценарий 3" />
+			<Item Name="EventsProcessSchema.BaseElements.ScriptTask4_ba928798175e43408b2479e50f08107f.Caption" Value="Задание-сценарий 4" />
+			<Item Name="EventsProcessSchema.BaseElements.StartMessage7_eda401b0db7844e1a316614b5494bf55.Caption" Value="CaseSaving" />
+			<Item Name="EventsProcessSchema.BaseElements.StartMessage8_4d98de4accd440708887edcb854690b1.Caption" Value="CaseUpdating" />
+			<Item Name="EventsProcessSchema.LaneSets.LaneSet3_4263dad92efc418aa2b8107510aa3014.Caption" Value="Pool 3" />
+			<Item Name="EventsProcessSchema.LaneSets.LaneSet3_4263dad92efc418aa2b8107510aa3014.Lanes.Lane4_52fdcee750d04775b8453a03ddbd8255.Caption" Value="Lane 4" />
+		</Items>
+	</Group>
+</Resources>

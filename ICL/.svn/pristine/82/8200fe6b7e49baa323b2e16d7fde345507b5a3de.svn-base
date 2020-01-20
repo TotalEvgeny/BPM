@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="ru-RU">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Добавить рабочие дни" />
+			<Item Name="LocalizableStrings.InvalidInputParameters.Value" Value="Недопустимые входные параметры" />
+			<Item Name="Parameters.CalendarId.Caption" Value="Календарь" />
+			<Item Name="Parameters.DateEnd.Caption" Value="Конечная дата" />
+			<Item Name="Parameters.DateStart.Caption" Value="Начальная дата" />
+			<Item Name="Parameters.NumberDays.Caption" Value="Количество дней" />
+		</Items>
+	</Group>
+</Resources>

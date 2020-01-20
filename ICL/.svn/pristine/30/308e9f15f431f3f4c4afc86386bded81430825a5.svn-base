@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="ru-RU">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Инциденты" />
+			<Item Name="NotificationCaption.Caption" Value="Заголовок экземпляра процесса" />
+			<Item Name="NotificationCaption.DisplayValue" Value="[#Название процесса#]" />
+			<Item Name="Stages.Stage1.Caption" Value="Зарегистрирован" />
+			<Item Name="Stages.Stage10.Caption" Value="Ожидание ответа заказчика" />
+			<Item Name="Stages.Stage11.Caption" Value="Разрешено" />
+			<Item Name="Stages.Stage12.Caption" Value="Отложен до срока" />
+			<Item Name="Stages.Stage2.Caption" Value="Принято на обработку" />
+			<Item Name="Stages.Stage3.Caption" Value="Закрыто" />
+			<Item Name="Stages.Stage4.Caption" Value="Ожидание ответа производителя" />
+			<Item Name="Stages.Stage5.Caption" Value="Ожидание ответа заявителя" />
+			<Item Name="Stages.Stage6.Caption" Value="Инженер назначен" />
+			<Item Name="Stages.Stage8.Caption" Value="Ожидание ответа функционального заказчика" />
+			<Item Name="Stages.Stage9.Caption" Value="Возобновлено" />
+		</Items>
+	</Group>
+</Resources>
