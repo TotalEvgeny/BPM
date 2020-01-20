@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Resources Culture="uk-UA">
-	<Group Type="String">
-		<Items>
-			<Item Name="Caption" Value="Edit page schema - &quot;Cases&quot; section on Portal" />
-			<Item Name="LocalizableStrings.ServicePactErrorMessage.Caption" Value="Повідомлення користувачу 1" />
-		</Items>
-	</Group>
-</Resources>
